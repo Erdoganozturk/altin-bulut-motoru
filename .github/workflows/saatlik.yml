@@ -1,0 +1,34 @@
+name: Saatlik Altin Motoru
+
+on:
+  schedule:
+    - cron: '5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  calistir:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu Cek
+        uses: actions/checkout@v4
+
+      - name: Python Kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Kutuphaneleri Yukle
+        run: pip install yfinance pandas numpy scikit-learn
+
+      - name: Bulut Motorunu Calistir
+        run: python bulut_motor.py
+
+      - name: Sonuclari Kaydet
+        run: |
+          git config --local user.email "bot@github.com"
+          git config --local user.name "AltinBulutBot"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Saatlik otomatik guncelleme" && git push)
