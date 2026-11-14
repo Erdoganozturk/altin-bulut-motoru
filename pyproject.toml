@@ -1,0 +1,5 @@
+[project]
+name = "GramAltinPro"
+version = "1.0.0"
+description = "Canli Gram Altin Takip ve Ongoru"
+dependencies = ["flet"]
