@@ -24,11 +24,6 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Flutter Kur
-        uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
-
       - name: Flet Yukle ve APK Derle
         env:
           ANDROID_HOME: /usr/local/lib/android/sdk
@@ -40,7 +35,7 @@ jobs:
           flet create /tmp/altin_app --project-name "GramAltinPro"
           cp main.py /tmp/altin_app/src/main.py 2>/dev/null || cp main.py /tmp/altin_app/main.py
           cd /tmp/altin_app
-          flet build apk --org "com.erdogan.altin" --project "GramAltinPro"
+          yes | flet build apk --org "com.erdogan.altin" --project "GramAltinPro"
 
       - name: APK Dosyasini Yukle
         uses: actions/upload-artifact@v4
