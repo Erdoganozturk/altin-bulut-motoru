@@ -56,4 +56,4 @@ def main(page: ft.Page):
     page.add(baslik_bar, durum_txt, gram_girdi, icerik)
     verileri_yukle()
 
-ft.app(target=main)
+ft.run(main)
