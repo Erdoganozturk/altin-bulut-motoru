@@ -1,17 +1,17 @@
 {
-  "guncelleme": "26.11.2026 18:00",
+  "guncelleme": "27.11.2026 02:45",
   "piyasa_acik": true,
   "piyasa_durum": "Küresel Piyasa Açık • Canlı",
-  "guncel_tl": 5898.35,
+  "guncel_tl": 5908.82,
   "ons_usd": 3620.4,
-  "dolar_tl": 50.67,
-  "tahmin_1s_tl": 5933.24,
-  "degisim_1s_yuzde": 0.59,
-  "tahmin_60g_tl": 6044.54,
-  "degisim_60g_yuzde": 2.48,
-  "test_sayisi": 24,
-  "ort_basari": 98.97,
-  "yon_isabet": 10,
+  "dolar_tl": 50.76,
+  "tahmin_1s_tl": 5909.7,
+  "degisim_1s_yuzde": 0.01,
+  "tahmin_60g_tl": 6045.24,
+  "degisim_60g_yuzde": 2.31,
+  "test_sayisi": 25,
+  "ort_basari": 99.0,
+  "yon_isabet": 11,
   "grafik_60g": [
     {
       "t": "07.09",
@@ -251,10 +251,19 @@
     },
     {
       "t": "25.11",
-      "f": 5898.35
+      "f": 5908.82
     }
   ],
   "son_testler": [
+    {
+      "Saat": "2026-11-26 18:00",
+      "Baslangic_TL": "5898.35",
+      "Saatlik_Tahmin_TL": "5933.24",
+      "Sonraki_Gercek_TL": 5908.82,
+      "Hata_TL": 24.42,
+      "Basari_Yuzde": 99.59,
+      "Yon_Isabet": 1.0
+    },
     {
       "Saat": "2026-11-26 07:00",
       "Baslangic_TL": "5904.4",
